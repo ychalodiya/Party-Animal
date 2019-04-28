@@ -1,0 +1,395 @@
+@import url("https://fonts.googleapis.com/css?family=Frijole|Lato:400,700");
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700|Oswald:600");
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+  display: block;
+}
+
+audio, canvas, video {
+  display: inline-block;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+[hidden] {
+  display: none;
+}
+
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+a:focus {
+  outline: thin dotted;
+}
+
+a:active, a:hover {
+  outline: 0;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+b, strong {
+  font-weight: 700;
+}
+
+dfn {
+  font-style: italic;
+}
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+code, kbd, pre, samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+q {
+  quotes: 01C 01D 018 019;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -.5em;
+}
+
+sub {
+  bottom: -.25em;
+}
+
+img {
+  border: 0;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: .35em .625em .75em;
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+}
+
+button, input {
+  line-height: normal;
+}
+
+button, html input[type=button], input[type=reset], input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+button[disabled], input[disabled] {
+  cursor: default;
+}
+
+input[type=checkbox], input[type=radio] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+}
+
+input[type=search] {
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body, figure {
+  margin: 0;
+}
+
+legend, button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: '';
+  clear: both;
+  height: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+  color: #ffff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: url(/assets/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+main {
+  background: url(/assets/shapes.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.wrapper {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.display-none {
+  display: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.headerComponent h1, .headerComponent h2 {
+  margin-top: 120px;
+  font-family: "Frijole", cursive;
+  font-size: 85px;
+  width: 100%;
+  text-align: center;
+}
+
+.headerComponent h2 {
+  font-size: 40px;
+  margin-top: 0;
+}
+
+@media (max-width: 768px) {
+  .headerComponent h1, .headerComponent h2 {
+    font-size: 55px;
+    text-align: center;
+    width: 100%;
+  }
+  .headerComponent h2 {
+    font-size: 25px;
+  }
+}
+
+.venueListComponent {
+  margin-bottom: 50px;
+  padding: 75px 50px 20px 50px;
+}
+
+.venueListComponent h2 {
+  text-transform: uppercase;
+}
+
+.venueListComponent button {
+  height: 31.5px;
+  cursor: pointer;
+  border: none;
+  border-radius: 1px;
+  font-size: 15px;
+  color: white;
+  padding: 0px 12px;
+  background-color: #000;
+  margin-top: 10px;
+}
+
+.venueListComponent button:hover {
+  background-color: #444;
+}
+
+.venueListComponent .venueList {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  overflow-y: scroll;
+  height: 100%;
+}
+
+.venueListComponent .venueCard {
+  padding-right: 30px;
+  cursor: pointer;
+  color: white;
+}
+
+.venueListComponent .venueCard p, .venueListComponent .venueCard h4 {
+  padding-left: 5px;
+}
+
+.venueListComponent .venueCard p {
+  font-size: 18px;
+}
+
+.venueListComponent .venueCard .venueName {
+  font-size: 25px;
+  color: #ffe900;
+}
+
+.venueListComponent .venueCard .venueDescription {
+  color: #ffe900;
+}
+
+.venueListComponent .venueCard .bold {
+  font-weight: 600;
+}
+
+.venueListComponent .venueCard img {
+  margin: 0 auto;
+  height: 250px;
+}
+
+@media (max-width: 850px) {
+  .venueListComponent .venueList {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .venueListComponent .venueList {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 450px) {
+  .venueListComponent .venueList {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+.venueDetailComponent {
+  margin-bottom: 80px;
+  padding: 0px 50px;
+}
+
+.venueDetailComponent h2 {
+  text-transform: uppercase;
+}
+
+.venueDetailComponent .animalList {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  overflow-y: scroll;
+  height: 400px;
+  border: 5px solid #142C0B;
+  border-radius: 25px;
+  -webkit-box-shadow: 5px 10px 20px #000;
+          box-shadow: 5px 10px 20px #000;
+  background-color: #142C0B;
+}
+
+.venueDetailComponent .animalCard {
+  padding: 15px;
+  margin: 20px;
+  cursor: pointer;
+  color: #ffe900;
+}
+
+.venueDetailComponent .animalDetails {
+  padding: 40px;
+  background-color: #142C0B;
+}
+
+.venueDetailComponent .animalDetails p {
+  text-align: center;
+}
+
+.venueDetailComponent .animalDetails img {
+  margin: 0 auto;
+  height: 200px;
+  width: 200px;
+}
+
+.footerComponent {
+  font-family: 'Lato', sans-serif;
+  width: 100%;
+  background-color: #000;
+  color: white;
+  height: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 13px;
+  font-weight: 700;
+}
+/*# sourceMappingURL=styles.css.map */

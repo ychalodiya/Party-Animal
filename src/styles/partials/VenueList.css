@@ -1,0 +1,87 @@
+.venueListComponent {
+  margin-bottom: 50px;
+  padding: 75px 50px 20px 50px;
+}
+
+.venueListComponent h2 {
+  text-transform: uppercase;
+}
+
+.venueListComponent button {
+  height: 31.5px;
+  cursor: pointer;
+  border: none;
+  border-radius: 1px;
+  font-size: 15px;
+  color: white;
+  padding: 0px 12px;
+  background-color: #000;
+  margin-top: 10px;
+}
+
+.venueListComponent button:hover {
+  background-color: #444;
+}
+
+.venueListComponent .venueList {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  overflow-y: scroll;
+  height: 100%;
+}
+
+.venueListComponent .venueCard {
+  padding-right: 30px;
+  cursor: pointer;
+  color: white;
+}
+
+.venueListComponent .venueCard p, .venueListComponent .venueCard h4 {
+  padding-left: 5px;
+}
+
+.venueListComponent .venueCard p {
+  font-size: 18px;
+}
+
+.venueListComponent .venueCard .venueName {
+  font-size: 25px;
+  color: #ffe900;
+}
+
+.venueListComponent .venueCard .venueDescription {
+  color: #ffe900;
+}
+
+.venueListComponent .venueCard .bold {
+  font-weight: 600;
+}
+
+.venueListComponent .venueCard img {
+  margin: 0 auto;
+  height: 250px;
+}
+
+@media (max-width: 850px) {
+  .venueListComponent .venueList {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .venueListComponent .venueList {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 450px) {
+  .venueListComponent .venueList {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+/*# sourceMappingURL=VenueList.css.map */

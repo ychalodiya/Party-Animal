@@ -1,0 +1,76 @@
+.venueListComponent {
+    margin-bottom: 50px;
+    padding: 75px 50px 20px 50px;
+  
+    h2 {
+        text-transform: uppercase;
+    }
+
+    button {
+      height: 31.5px;
+      cursor: pointer;
+      border: none;
+      border-radius: 1px;
+      font-size: 15px;
+      color: white;
+      padding: 0px 12px;
+      background-color: #000;
+      margin-top: 10px;
+      
+      &:hover {
+        background-color: #444;
+      }
+    }
+  
+    .venueList  {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      overflow-y: scroll;
+      height: 100%;
+      // height: 600px;
+    }
+  
+    .venueCard {
+        padding-right: 30px;
+        cursor: pointer;
+        color: white;
+        p, h4 {
+            padding-left: 5px;
+        }
+        p {
+            font-size: 18px;
+        }
+        .venueName {
+            font-size: 25px;
+            color: #ffe900;
+        }
+        .venueDescription {
+            color: #ffe900;
+        }
+        .bold {
+            font-weight: 600;
+        }
+        img {
+            margin: 0 auto;
+            height: 250px;
+        }
+    }
+  
+    @media (max-width: 850px) {
+      .venueList {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  
+    @media (max-width: 600px) {
+      .venueList {
+        grid-template-columns: 1fr;
+      }
+    }
+  
+    @media (max-width: 450px) {
+      .venueList  {
+        grid-template-columns: 1fr;
+      }
+    }
+  }

@@ -1,0 +1,27 @@
+.headerComponent {
+
+    h1, h2 {
+      margin-top: 120px;
+      font-family: $secondary-font;
+      font-size: 85px;
+      width: 100%;
+      text-align: center;
+    }
+
+    h2 {
+        font-size: 40px;
+        margin-top: 0;
+    }
+  
+    @media (max-width: 768px) {
+      h1, h2 {
+        font-size: 55px;
+        text-align: center;
+        width: 100%;
+      }
+      h2 {
+          font-size: 25px;
+      }
+    }
+  }
+  
